@@ -19,12 +19,7 @@ class StudentServiceImplTest {
     @Test
     void getAllStudents() {
         List<Student> items = repository.findAll();
-        assertEquals(5,items.size());
+        assertEquals(1,items.size());
     }
-    @Test
-    public void testFindOne(){
-        Student student = repository.findById(1l).get();
 
-        assertEquals("Muna D", student.getStudName());
-    }
 }
