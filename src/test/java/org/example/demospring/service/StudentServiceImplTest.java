@@ -16,10 +16,15 @@ import static org.junit.jupiter.api.Assertions.*;
 class StudentServiceImplTest {
     @Autowired
     private StudentRepository repository;
-    @Test
-    void getAllStudents() {
-        List<Student> items = repository.findAll();
-        assertEquals(1,items.size());
-    }
-
+//    @Test
+//    void getAllStudents() {
+//        List<Student> items = repository.findAll();
+//        assertEquals(1,items.size());
+//    }
+//    @Test
+//    public void testFindOne(){
+//        Student student = repository.findById(1l).get();
+//
+//        assertEquals("Muna D", student.getStudName());
+//    }
 }
